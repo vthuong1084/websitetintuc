@@ -1,0 +1,218 @@
+/*======================================
+	01. Header CSS
+========================================*/
+/* Topbar */
+.topbar {
+	background-color: #fff;
+	border-bottom: 1px solid #e2e2e2;
+	padding: 15px 0;
+}
+
+/* Top */
+.header.shop .list-main {
+	margin: 0;
+	padding: 0;
+}
+.sticky-header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 1000;
+  }
+.header.shop .list-main li {
+	display: inline-block;
+	color: #333;
+	font-size: 13px;
+	font-weight: 500;
+	border-right: 1px solid #f0f0f0;
+	padding: 0px 13px;
+}
+
+.header.shop .list-main li:first-child{
+	padding-left:0;
+}
+
+.header.shop .list-main li:last-child{
+	padding-right:0;
+	border:none;
+}
+
+.header.shop .list-main li .icon{
+	display: inline-block;
+	margin-right: 4px;
+	font-size: 20px;
+	color: var(--main-color-blue);
+	position: relative;
+
+}
+
+.header.shop .list-main li a{
+	color:#333;
+}
+
+.header.shop .list-main li a:hover{
+	color:var(--main-color-blue);
+}
+
+.header.shop .right-content{
+	float:right;
+}
+/* end top */
+
+/* middle */
+.header.shop .middle-inner {
+	padding: 20px 0;
+	background: #fff;
+	border-top: 1px solid #eee;
+}
+
+/* Logo */
+
+.header.shop .logo {
+	float: left;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+
+	img {
+		width: 40%;
+		height: 40%;
+	}
+}
+
+/* Header Middle */
+.header.shop .search-bar-top {
+	text-align: center;
+	/* display: flex; */
+}
+
+.header.shop .search-bar {
+	display: inline-block;
+	position: relative;
+	width: 50%;
+}
+
+.header.shop .search-bar input {
+	color: #666;
+	border: none;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.header.shop .search-bar .btnn {
+	width: 12%;
+	height: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+	background: var(--main-color-blue);
+	position: absolute;
+	border: none;
+	right: 0;
+	top: 0;
+	border-radius: 0 5px 5px 0;
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+
+}
+.header.shop .search-bar .btnn:hover{
+	color:#fff;
+	background:#1b00ca;
+}
+/* Search Form */
+
+.header.shop .right-bar {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	top: 15px;
+	float: right;
+	position: relative;
+
+	.icon {
+		color: var(--main-color-blue);
+	}
+
+	:hover {
+		color: var(--main-color-blue);
+	}
+}
+/* end middle */
+
+/* nav */
+/**********************************/
+/********* Header Nav CSS *********/
+/**********************************/
+
+.header.header-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header .navbar {
+    height: 100%;
+    padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    background: rgba(228, 122, 46, .2);
+    border-bottom: 2px solid #E47A2E;
+    transition: none;
+}
+
+.header .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 768px) {
+    .header,
+    .header .navbar {
+        background: #353535 !important;
+    }
+    
+    .header .navbar-brand {
+        display: none;
+    }
+    
+    .header a.nav-link {
+        padding: 8px 15px;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 768px) {   
+    .header,
+    .header .navbar {
+        background: #333333 !important;
+    }
+    
+    .header a.nav-link {
+        padding: 5px;
+    }
+    
+    .header .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+/*======================================
+	End Header CSS
+========================================*/

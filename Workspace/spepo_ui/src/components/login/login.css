@@ -1,0 +1,198 @@
+.container-login{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+}
+
+.container-login .form-login{
+    background: var(--main-bg-light);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: min(100%, 470px);
+    padding: 50px;
+    display: grid;
+    gap: 1rem;
+    border-radius: 10px;
+}
+
+.container-login .form-login .title h1{
+    font-size: 2rem;
+    position: relative;
+    padding-left: 25px;
+}
+
+.container-login .form-login .title h1::before, .container-login .form-login .title h1::after{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--main-color-blue);
+    left: 0;
+    top: 12px;
+    border-radius: 50%;
+}
+
+.container-login .form-login .title h1::after{
+    animation: pulse 1.3s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+.container-login .form-login .title p{
+    font-size: .9rem;
+}
+
+.container-login .form-login .input-login-form{
+    font: inherit;
+    border: 2px solid transparent;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+}
+
+.container-login .form-login .input-field{
+    position: relative;
+}
+
+.container-login .form-login .input-field .input-login-form{
+    background: #eeeeee;
+    padding: 23px 15px 7px;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.container-login .form-login .input-field label{
+    position: absolute;
+    /* color: var(--secondary); */
+    left: 15px;
+    top: 16px;
+    transition: .3s ease;
+}
+
+.container-login .form-login .input-field .input-login-form:focus ~ label, .container-login .form-login .input-field .input-login-form:not(:placeholder-shown) ~ label{
+    font-size: .85rem;
+    top: 5px;
+}
+
+.container-login .form-login .input-field .input-login-form:focus{
+    border: 2px solid black;
+}
+
+.container-login .form-login .input-field .input-login-form:focus ~ label{
+    color: black;
+}
+
+.container-login .form-login #show-hide-pass{
+    width: 1.5rem;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.container-login .form-login .remember-forgot {
+    display: flex;
+    font-size: .9rem;
+}
+
+.container-login .form-login .forgot-pass{
+    margin: 0;
+    border-bottom: 1px solid transparent;
+    color: var(--main-color-blue);
+    font-size: .9rem;
+    text-align: right;
+}
+
+.container-login .form-login .forgot-pass:hover{
+    border-bottom: 1px solid var(--main-color-blue);
+}
+
+.container-login .form-login .loginBtn{
+    display: flex;
+    border: 1px solid transparent;
+    outline: 2px solid transparent;
+    border-radius: 5px;
+    background: var(--main-color-blue);
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.container-login .form-login .loginBtn:hover {
+    background: #0700cd;
+}
+
+.container-login .form-login .or{
+    display: flex;
+}
+
+.container-login .form-login .or::before, .container-login .form-login .or::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: black;
+    margin: auto;
+}
+
+.container-login .form-login .or::before{
+    margin-right: 1rem;
+}
+
+.container-login .form-login .or::after{
+    margin-left: 1rem;
+}
+
+.container-login .form-login .google-login{
+    font: inherit;
+    color: red;
+    border: 1px solid red;
+    outline: 2px solid transparent;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+            rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container-login .form-login .google-login:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.container-login .form-login .signup{
+    font-size: .9rem;
+    text-align: center;
+}
+
+.container-login .form-login .signup a{
+    color: var(--main-color-blue);
+}
+
+.container-login .form-login .signup a:hover{
+    border-bottom: 2px solid var(--main-color-blue) ;
+    color: var(--main-color-blue);
+}
+
+@media screen and (max-width:480px) {
+    .container-login .form-login{
+        background: transparent;
+        box-shadow: none;
+        padding: 30px;
+    }
+}

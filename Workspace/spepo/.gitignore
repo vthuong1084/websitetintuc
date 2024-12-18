@@ -1,0 +1,8 @@
+/target
+/.idea
+/.settings
+/bin
+spepo.iml
+.project
+.classpath
+/src/main/resources/application.properties
